@@ -25,8 +25,8 @@ class MeetingMinutes(models.Model):
     def __str__(self):
         return self.meetingid
 
-        class Meta:
-            db_table='meeting minutes'
+    class Meta:
+        db_table='meeting minutes'
 
 class Resource(models.Model):
     resourcename=models.CharField(max_length=255)
